@@ -202,3 +202,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+!/src/scraping/proxies/proxies.txt
+!/src/scraping/spiders/logs/
