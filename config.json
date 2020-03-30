@@ -1,0 +1,4 @@
+{
+  "use_proxy": true,
+  "proxy_path": "src/scraping/proxies/proxies.txt"
+}

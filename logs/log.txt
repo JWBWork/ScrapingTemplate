@@ -1,0 +1,137 @@
+2020-03-07 13:56:31.409 | INFO     | __main__:main:22 - launching main
+2020-03-07 13:56:33.223 | INFO     | src.scraping.proxies.proxies:update_proxies:84 - requesting proxies...
+2020-03-07 13:56:33.224 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:43 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-07 13:56:33.229 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-07 13:56:33.503 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-07 13:56:33.566 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:47 - parsing response for proxies
+2020-03-07 13:56:33.606 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-07 13:56:34.799 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 1192
+2020-03-07 13:56:34.803 | INFO     | src.scraping.proxies.proxies:update_proxies:93 - writing proxies to file
+2020-03-07 13:56:34.825 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-07 13:56:34.826 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-07 13:56:34.827 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-07 13:56:34.828 | INFO     | __main__:main:39 - runtime: 0:00:01.604710
+2020-03-07 13:57:09.084 | INFO     | __main__:main:22 - launching main
+2020-03-07 13:57:09.213 | INFO     | src.scraping.proxies.proxies:update_proxies:84 - requesting proxies...
+2020-03-07 13:57:09.214 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:43 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-07 13:57:09.219 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-07 13:57:09.443 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-07 13:57:09.508 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:47 - parsing response for proxies
+2020-03-07 13:57:09.549 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-07 13:57:10.652 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 1192
+2020-03-07 13:57:10.658 | INFO     | src.scraping.proxies.proxies:update_proxies:93 - writing proxies to file
+2020-03-07 13:57:10.674 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-07 13:57:10.676 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-07 13:57:10.676 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-07 13:57:10.677 | INFO     | __main__:main:39 - runtime: 0:00:01.464085
+2020-03-07 13:57:53.784 | INFO     | __main__:main:22 - launching main
+2020-03-07 13:57:53.968 | INFO     | src.scraping.proxies.proxies:update_proxies:84 - requesting proxies...
+2020-03-07 13:57:53.969 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:43 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-07 13:57:53.974 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-07 13:57:54.228 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-07 13:57:54.298 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:47 - parsing response for proxies
+2020-03-07 13:57:54.329 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-07 13:57:56.150 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 1192
+2020-03-07 13:57:56.155 | INFO     | src.scraping.proxies.proxies:update_proxies:93 - writing proxies to file
+2020-03-07 13:57:56.172 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-07 13:57:56.174 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-07 13:57:56.175 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-07 13:57:56.175 | INFO     | __main__:main:40 - runtime: 0:00:02.207100
+2020-03-07 13:58:41.597 | INFO     | __main__:main:22 - launching main
+2020-03-07 13:58:41.728 | INFO     | src.scraping.proxies.proxies:update_proxies:84 - requesting proxies...
+2020-03-07 13:58:41.729 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:43 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-07 13:58:41.733 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-07 13:58:41.971 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-07 13:58:42.034 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:47 - parsing response for proxies
+2020-03-07 13:58:42.069 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-07 13:58:42.644 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 1192
+2020-03-07 13:58:42.650 | INFO     | src.scraping.proxies.proxies:update_proxies:93 - writing proxies to file
+2020-03-07 13:58:42.667 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-07 13:58:42.669 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-07 13:58:42.669 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-07 13:58:42.670 | INFO     | __main__:main:34 - starting TemplateSelSpider
+2020-03-07 13:58:42.679 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-07 13:58:42.728 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: b2e3079a0e8d0c8e
+2020-03-07 13:58:42.785 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-07 13:58:43.708 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:55112/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--disable-gpu", "--headless", "--log-level=2", "--\u2013disable-notifications", "--disable-dev-shm-usage", "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0", "test-type"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--disable-gpu", "--headless", "--log-level=2", "--\u2013disable-notifications", "--disable-dev-shm-usage", "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0", "test-type"]}}}
+2020-03-07 13:58:43.710 | DEBUG    | urllib3.connectionpool:_new_conn:225 - Starting new HTTP connection (1): 127.0.0.1:55112
+2020-03-07 13:58:48.503 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:55112 "POST /session HTTP/1.1" 200 680
+2020-03-07 13:58:48.504 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-07 13:58:48.505 | INFO     | src.scraping.spiders.scrapy_sel_template:__init__:42 - TemplateSelSpider init ...
+2020-03-07 13:58:49.330 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-07 13:58:49.341 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-07 13:58:49.344 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-07 13:58:49.345 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-07 13:58:49.352 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-07 13:58:49.354 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-07 13:58:49.355 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 337, reanimated: 0, mean backoff time: 0s)
+2020-03-07 13:59:10.377 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://144.202.10.131:80> is DEAD
+2020-03-07 13:59:10.379 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-07 13:59:19.356 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 336, reanimated: 0, mean backoff time: 151s)
+2020-03-07 13:59:31.386 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://173.197.169.6:8080> is DEAD
+2020-03-07 13:59:31.387 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-07 13:59:33.077 | DEBUG    | rotating_proxies.expire:mark_good:95 - Proxy <http://167.71.86.1:8080> is GOOD
+2020-03-07 13:59:33.085 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-07 13:59:33.187 | INFO     | src.scraping.spiders.scrapy_sel_template:parse:55 - parsed url https://www.google.com
+2020-03-07 13:59:33.187 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:55112/session/b83aa7d41d6ce4e51350de942aa0b580/url {"url": "https://www.google.com"}
+2020-03-07 13:59:37.237 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:55112 "POST /session/b83aa7d41d6ce4e51350de942aa0b580/url HTTP/1.1" 200 14
+2020-03-07 13:59:37.238 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-07 13:59:37.239 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:55112/session/b83aa7d41d6ce4e51350de942aa0b580/timeouts {"implicit": 3000}
+2020-03-07 13:59:37.242 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:55112 "POST /session/b83aa7d41d6ce4e51350de942aa0b580/timeouts HTTP/1.1" 200 14
+2020-03-07 13:59:37.243 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-07 13:59:37.248 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-07 13:59:37.248 | WARNING  | src.scraping.spiders.scrapy_sel_template:closed:64 - TemplateSelSpider spider closed:finished
+2020-03-07 13:59:37.250 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'bans/error/twisted.internet.error.TCPTimedOutError': 2,
+ 'downloader/exception_count': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 2,
+ 'downloader/request_bytes': 774,
+ 'downloader/request_count': 3,
+ 'downloader/request_method_count/GET': 3,
+ 'downloader/response_bytes': 60669,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 47.895403,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 7, 18, 59, 37, 248024),
+ 'log_count/DEBUG': 16,
+ 'log_count/INFO': 12,
+ 'proxies/dead': 2,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 187.32591048676258,
+ 'proxies/reanimated': 0,
+ 'proxies/unchecked': 335,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 3,
+ 'scheduler/dequeued/memory': 3,
+ 'scheduler/enqueued': 3,
+ 'scheduler/enqueued/memory': 3,
+ 'start_time': datetime.datetime(2020, 3, 7, 18, 58, 49, 352621)}
+2020-03-07 13:59:37.250 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-07 13:59:37.269 | INFO     | __main__:main:40 - runtime: 0:00:55.541958
