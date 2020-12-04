@@ -1,0 +1,42 @@
+{
+	"steps": [{
+		"url": "address_url",
+		"selenium": {
+			"scrape": [{
+				"type": "xpath",
+				"path": "path_to_listing_anchors",
+				"name": "listing_url"
+			}],
+			"actions": [
+				{
+					"action": "click",
+					"action_target": "path_to_next_page_button",
+					"repeat": {
+						"target": "path_to_next_page_button",
+						"condition": "None"
+					}
+				},
+			],
+		},
+		"follow": {
+			"urls": ["store.listing_url"]
+		}
+	}, {
+		"scrape": [{
+			"type": "css",
+			"path": "path_to_listing_title",
+			"name": "listing_title"
+		},{
+			"type": "xpath",
+			"path": "path_to_listing_price",
+			"name": "listing_price"
+		}]
+	}],
+	"output": {
+		"format": "csv",
+		"deliver_by": {
+			"type": "email",
+			"address": "eail@blah.com"
+		}
+	}
+}

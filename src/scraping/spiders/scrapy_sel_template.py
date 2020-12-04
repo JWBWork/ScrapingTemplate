@@ -1,6 +1,7 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from os import path, name as os_name
 import json
 from time import sleep
@@ -46,6 +47,7 @@ class TemplateSelSpider(scrapy.Spider):
 		# instantiating chrome selenium driver, start urls feature an 'infinite scroll'
 		# behavior that needs to be triggered to view all listed shoes
 		self.store = kwargs.get('store', pd.DataFrame())
+		self.config = kwargs['config']
 		self.file_path = kwargs.get(
 			'file_path',
 			path.join(project_path, f"results/{self.__class__.__name__}-{datetime.now().strftime('%y-%m-%d-%H-%M')}")
@@ -53,15 +55,21 @@ class TemplateSelSpider(scrapy.Spider):
 		if kwargs.get('use_selenium'):
 			self.driver = get_driver()
 		logger.info(
-			f'{TemplateSelSpider.name} init, store: {self.store}, file_path: {self.file_path}'
+			f'{TemplateSelSpider.name} init, store: {type(self.store)}, file_path: {self.file_path}'
 		)
 		super().__init__()
 
 	def start_requests(self):
-		for url in TemplateSelSpider.start_urls:
+		# TODO: change for multiple start urls?
+		# for url in TemplateSelSpider.start_urls:
+		step_0 = self.config.sets[0]
+		callback = getattr(self, step_0['type'])
+		for url in step_0.url:
 			request = scrapy.Request(
 				url,
-				callback=self.parse,
+				# callback=self.parse,
+				callback=callback,
+				meta={'step_n': 0}
 			)
 			request.meta['max_proxies_to_try'] = 150
 			yield request
@@ -71,8 +79,49 @@ class TemplateSelSpider(scrapy.Spider):
 		# SELENIUM DRIVER
 		# self.driver.get(response.url)
 		# self.driver.implicitly_wait(3)
-		#Append data
+		# Append data
 		self.store = self.store.append({'c': 0, 'd': 2}, ignore_index=True)
+
+	def selenium_scrape(self, response):
+		step = self.config['steps'][response.meta['step_n']]
+		self.driver.get(step['url'])
+		self.driver.implicitly_wait(2)
+		instructions = step['selenium']
+		repeat = instructions.get('repeat')
+		follow_urls = []
+
+		def follow_check(scrape, url):
+			if scrape['follow_urls']:
+				follow_urls.append(url)
+
+		# actual scraping happens in while loop
+		while True:
+			for action_n, action in enumerate(instructions.actions):
+				action_type = action['action']
+				if action_type == 'click':
+					button = self.driver.find_element_by_xpath(action['path'])
+					button.click()
+					self.driver.implicitly_wait(2)
+				elif action_type == 'scrape':
+					targets = self.driver.find_elements_by_xpath(action['path'])
+					for attribute, name in action['scrape']['content'].items():
+						if attribute == 'href':
+							for target in targets:
+								href_url = target.get_attribute('href')
+								follow_check(instructions['scrape'], href_url)
+
+			if not instructions.get('repeat'):
+				break
+			elif repeat.condition == "Not present":
+				# TODO: other break conditions? Not clickable? ect?
+				try:
+					if repeat['type'] == 'xpath':
+						self.driver.find_elements_by_xpath(repeat['xpath'])
+				except NoSuchElementException:
+					break
+
+		for url in follow_urls:
+			request =
 
 	def __del__(self):
 		self.store.to_csv(self.file_path, index=False)
@@ -101,7 +150,8 @@ def start_scrape():
 		'file_name': 'template.csv',
 		'file_path': file_path,
 		'store': store,
-		'use_selenium': False
+		'use_selenium': False,
+		'config': config
 	}
 	process.crawl(TemplateSelSpider, **kwargs)
 	process.start()

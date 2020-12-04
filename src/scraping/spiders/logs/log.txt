@@ -229,3 +229,1223 @@
  'scheduler/enqueued/memory': 2,
  'start_time': datetime.datetime(2020, 3, 7, 3, 19, 40, 200802)}
 2020-03-06 22:21:22.175 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-30 11:35:08.323 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 11:35:08.338 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 11:35:08.338 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 11:35:08.346 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 11:35:08.460 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: bdbeef09826936f7
+2020-03-30 11:35:08.515 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 11:35:09.148 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:55547/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--disable-gpu", "--headless", "--log-level=2", "--\u2013disable-notifications", "--disable-dev-shm-usage", "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0", "test-type"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--disable-gpu", "--headless", "--log-level=2", "--\u2013disable-notifications", "--disable-dev-shm-usage", "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0", "test-type"]}}}
+2020-03-30 11:35:09.148 | DEBUG    | urllib3.connectionpool:_new_conn:225 - Starting new HTTP connection (1): 127.0.0.1:55547
+2020-03-30 11:35:14.179 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:55547 "POST /session HTTP/1.1" 200 681
+2020-03-30 11:35:14.180 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 11:35:14.180 | INFO     | __main__:__init__:46 - TemplateSelSpider init ...
+2020-03-30 11:35:14.742 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 11:35:14.756 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 11:35:14.758 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 11:35:14.758 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 11:35:14.776 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 11:35:14.778 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 11:35:14.778 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 337, reanimated: 0, mean backoff time: 0s)
+2020-03-30 11:35:35.818 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://67.207.168.100:3128> is DEAD
+2020-03-30 11:35:35.818 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 11:35:44.778 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 336, reanimated: 0, mean backoff time: 294s)
+2020-03-30 11:35:56.823 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://50.203.239.22:80> is DEAD
+2020-03-30 11:35:56.824 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 11:36:14.777 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 11:36:14.779 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 2, unchecked: 335, reanimated: 0, mean backoff time: 240s)
+2020-03-30 11:36:17.827 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://64.227.37.47:8080> is DEAD
+2020-03-30 11:36:17.828 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 11:36:19.929 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://64.225.22.205:8888> is DEAD
+2020-03-30 11:36:19.930 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 4 times, max retries: 150)
+2020-03-30 12:14:00.131 | WARNING  | __main__:start_scrape:87 - Could not load <module 'ntpath' from 'C:\\Program Files\\Python37\\lib\\ntpath.py'>, [Errno 2] File D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders\./Template.csv does not exist: 'D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders\\./Template.csv'
+2020-03-30 12:14:00.184 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 12:14:00.185 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 12:14:00.185 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 12:14:00.203 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 12:14:00.325 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: ac003779c677762b
+2020-03-30 12:14:00.381 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 12:14:00.383 | INFO     | __main__:__init__:54 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 12:14:00.382359
+2020-03-30 12:14:00.999 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 12:14:01.005 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 12:14:01.007 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 12:14:01.007 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 12:14:01.033 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 12:14:01.034 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 12:14:01.035 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 337, reanimated: 0, mean backoff time: 0s)
+2020-03-30 12:14:06.150 | DEBUG    | rotating_proxies.expire:mark_good:95 - Proxy <http://67.73.189.42:999> is GOOD
+2020-03-30 12:14:06.154 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-30 12:14:06.254 | INFO     | __main__:parse:68 - parsed url https://www.google.com
+2020-03-30 12:14:06.254 | ERROR    | scrapy.core.scraper:handle_spider_error:164 - Spider error processing <GET https://www.google.com> (referer: None)
+Traceback (most recent call last):
+
+  File "D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders/scrapy_sel_template.py", line 101, in <module>
+    start_scrape()
+    -> <function start_scrape at 0x00000283CC6C9048>
+
+  File "D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders/scrapy_sel_template.py", line 97, in start_scrape
+    process.start()
+    |       -> <function CrawlerProcess.start at 0x00000283CE08A318>
+    -> <scrapy.crawler.CrawlerProcess object at 0x00000283CE25E9C8>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\scrapy\crawler.py", line 312, in start
+    reactor.run(installSignalHandlers=False)  # blocking call
+    |       -> <function _SignalReactorMixin.run at 0x00000283CD693798>
+    -> <twisted.internet.selectreactor.SelectReactor object at 0x00000283D6E4BE48>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\base.py", line 1283, in run
+    self.mainLoop()
+    |    -> <function _SignalReactorMixin.mainLoop at 0x00000283CD693828>
+    -> <twisted.internet.selectreactor.SelectReactor object at 0x00000283D6E4BE48>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\base.py", line 1292, in mainLoop
+    self.runUntilCurrent()
+    |    -> <function ReactorBase.runUntilCurrent at 0x00000283CD691678>
+    -> <twisted.internet.selectreactor.SelectReactor object at 0x00000283D6E4BE48>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\base.py", line 913, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+    |    |     |    |       |    -> {}
+    |    |     |    |       -> <DelayedCall 0x283cdd0c1c8 [-0.040068864822387695s] called=1 cancelled=0 Deferred.callback(<200 https://www.google.com>)>
+    |    |     |    -> (<200 https://www.google.com>,)
+    |    |     -> <DelayedCall 0x283cdd0c1c8 [-0.040068864822387695s] called=1 cancelled=0 Deferred.callback(<200 https://www.google.com>)>
+    |    -> <bound method Deferred.callback of <Deferred at 0x283cdd0c448 current result: <twisted.python.failure.Failure builtins.Attrib...
+    -> <DelayedCall 0x283cdd0c1c8 [-0.040068864822387695s] called=1 cancelled=0 Deferred.callback(<200 https://www.google.com>)>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\defer.py", line 460, in callback
+    self._startRunCallbacks(result)
+    |    |                  -> <200 https://www.google.com>
+    |    -> <function Deferred._startRunCallbacks at 0x00000283CCF1BD38>
+    -> <Deferred at 0x283cdd0c448 current result: <twisted.python.failure.Failure builtins.AttributeError: 'TemplateSelSpider' objec...
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\defer.py", line 568, in _startRunCallbacks
+    self._runCallbacks()
+    |    -> <function Deferred._runCallbacks at 0x00000283CCF1BE58>
+    -> <Deferred at 0x283cdd0c448 current result: <twisted.python.failure.Failure builtins.AttributeError: 'TemplateSelSpider' objec...
+
+> File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+    |       |        |        |       |        |       -> {}
+    |       |        |        |       |        -> (<GET https://www.google.com>, <200 https://www.google.com>, <TemplateSelSpider 'TemplateSelSpider' at 0x283d6f80d08>)
+    |       |        |        |       -> <twisted.python.failure.Failure builtins.AttributeError: 'TemplateSelSpider' object has no attribute 'driver'>
+    |       |        |        -> <Deferred at 0x283cdd0c448 current result: <twisted.python.failure.Failure builtins.AttributeError: 'TemplateSelSpider' objec...
+    |       |        -> <bound method Scraper.handle_spider_error of <scrapy.core.scraper.Scraper object at 0x00000283D71B2248>>
+    |       -> <twisted.python.failure.Failure builtins.AttributeError: 'TemplateSelSpider' object has no attribute 'driver'>
+    -> <Deferred at 0x283cdd0c448 current result: <twisted.python.failure.Failure builtins.AttributeError: 'TemplateSelSpider' objec...
+
+  File "D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders/scrapy_sel_template.py", line 69, in parse
+    self.driver.get(response.url)
+    |               |        -> <property object at 0x00000283CD7D5B88>
+    |               -> <200 https://www.google.com>
+    -> <TemplateSelSpider 'TemplateSelSpider' at 0x283d6f80d08>
+
+AttributeError: 'TemplateSelSpider' object has no attribute 'driver'
+2020-03-30 12:14:06.396 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-30 12:14:06.397 | WARNING  | __main__:closed:77 - TemplateSelSpider spider closed:finished
+2020-03-30 12:14:06.397 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'downloader/request_bytes': 258,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 60366,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 5.362952,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 30, 16, 14, 6, 396359),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 11,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 0.0,
+ 'proxies/reanimated': 0,
+ 'proxies/unchecked': 337,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 30, 16, 14, 1, 33407)}
+2020-03-30 12:14:06.398 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-30 12:15:50.395 | WARNING  | __main__:start_scrape:87 - Could not load <module 'ntpath' from 'C:\\Program Files\\Python37\\lib\\ntpath.py'>, [Errno 2] File D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders\./Template.csv does not exist: 'D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders\\./Template.csv'
+2020-03-30 12:15:50.404 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 12:15:50.405 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 12:15:50.405 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 12:15:50.409 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 12:15:50.425 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: 4309455f810db5c9
+2020-03-30 12:15:50.442 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 12:15:50.444 | INFO     | __main__:__init__:54 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 12:15:50.443357
+2020-03-30 12:15:50.795 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 12:15:50.799 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 12:15:50.800 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 12:15:50.801 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 12:15:50.804 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 12:15:50.805 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 12:15:50.805 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 337, reanimated: 0, mean backoff time: 0s)
+2020-03-30 12:15:53.149 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://65.38.21.118:80> is DEAD
+2020-03-30 12:15:53.149 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 13:43:55.757 | WARNING  | __main__:start_scrape:86 - Could not load <module 'ntpath' from 'C:\\Program Files\\Python37\\lib\\ntpath.py'>, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../Template.csv'
+2020-03-30 13:43:55.826 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 13:43:55.839 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 13:43:55.839 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 13:43:55.870 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 13:43:55.984 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: 3f7845a11721397b
+2020-03-30 13:43:56.047 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 13:43:56.048 | INFO     | __main__:__init__:53 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 13:43:56.048777
+2020-03-30 13:43:56.642 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 13:43:56.648 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 13:43:56.649 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 13:43:56.649 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 13:43:56.666 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 13:43:56.668 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 13:43:56.668 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 337, reanimated: 0, mean backoff time: 0s)
+2020-03-30 13:44:15.174 | WARNING  | __main__:start_scrape:86 - Could not load <module 'ntpath' from 'C:\\Program Files\\Python37\\lib\\ntpath.py'>, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../Template.csv'
+2020-03-30 13:44:15.183 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 13:44:15.184 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 13:44:15.184 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 13:44:15.188 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 13:44:15.206 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: 5be2fbce949dc087
+2020-03-30 13:44:15.226 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 13:44:15.228 | INFO     | __main__:__init__:53 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 13:44:15.227557
+2020-03-30 13:44:15.654 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 13:44:15.659 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 13:44:15.660 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 13:44:15.661 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 13:44:15.664 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 13:44:15.665 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 13:44:15.666 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 337, reanimated: 0, mean backoff time: 0s)
+2020-03-30 13:44:36.679 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://138.68.231.14:8118> is DEAD
+2020-03-30 13:44:36.680 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 13:44:45.666 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 336, reanimated: 0, mean backoff time: 153s)
+2020-03-30 13:45:15.665 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 13:45:15.666 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 336, reanimated: 0, mean backoff time: 153s)
+2020-03-30 13:45:45.666 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 336, reanimated: 0, mean backoff time: 153s)
+2020-03-30 13:46:15.664 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 13:46:15.666 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 336, reanimated: 0, mean backoff time: 153s)
+2020-03-30 13:46:16.681 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://209.151.158.105:8080> is DEAD
+2020-03-30 13:46:16.681 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 13:46:37.685 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://64.227.37.47:8080> is DEAD
+2020-03-30 13:46:37.685 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 13:46:45.666 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 3, unchecked: 334, reanimated: 0, mean backoff time: 101s)
+2020-03-30 13:46:52.274 | WARNING  | __main__:start_scrape:87 - Could not load D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 13:46:52.283 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 13:46:52.283 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 13:46:52.284 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 13:46:52.287 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 13:46:52.303 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: ecf44127322f396e
+2020-03-30 13:46:52.340 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 13:46:52.341 | INFO     | __main__:__init__:53 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 13:46:52.341739
+2020-03-30 13:46:52.705 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 13:46:52.710 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 13:46:52.711 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 13:46:52.711 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 13:46:52.715 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 13:46:52.716 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 13:46:52.716 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 337, reanimated: 0, mean backoff time: 0s)
+2020-03-30 13:47:13.733 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://69.65.65.178:34548> is DEAD
+2020-03-30 13:47:13.733 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 13:47:15.817 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://167.172.17.86:3128> is DEAD
+2020-03-30 13:47:15.818 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 13:47:15.851 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://159.203.166.41:8080> is DEAD
+2020-03-30 13:47:15.851 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 13:47:22.716 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 3, unchecked: 334, reanimated: 0, mean backoff time: 57s)
+2020-03-30 13:47:27.716 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 13:47:32.841 | INFO     | src.scraping.proxies.proxies:update_proxies:84 - requesting proxies...
+2020-03-30 13:47:32.841 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:43 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-30 13:47:32.845 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-30 13:47:33.185 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-30 13:47:33.193 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:47 - parsing response for proxies
+2020-03-30 13:47:33.276 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-30 13:47:33.956 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 662
+2020-03-30 13:47:33.960 | INFO     | src.scraping.proxies.proxies:update_proxies:93 - writing proxies to file
+2020-03-30 13:47:33.962 | WARNING  | __main__:start_scrape:90 - Could not load D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 13:47:33.981 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 13:47:33.982 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 13:47:33.983 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 13:47:33.991 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 13:47:34.030 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: 55d1e0e72776c913
+2020-03-30 13:47:34.068 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 13:47:34.070 | INFO     | __main__:__init__:53 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 13:47:34.069738
+2020-03-30 13:47:34.412 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 13:47:34.417 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 13:47:34.419 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 13:47:34.419 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 13:47:34.423 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 13:47:34.424 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 13:47:34.424 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 286, reanimated: 0, mean backoff time: 0s)
+2020-03-30 13:48:02.262 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.94:80> is DEAD
+2020-03-30 13:48:02.262 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 13:48:04.424 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 285, reanimated: 0, mean backoff time: 64s)
+2020-03-30 13:48:06.193 | DEBUG    | rotating_proxies.expire:mark_good:95 - Proxy <http://3.95.64.154:3128> is GOOD
+2020-03-30 13:48:06.196 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-30 13:48:06.296 | INFO     | __main__:parse:67 - parsed url https://www.google.com
+2020-03-30 13:48:06.297 | ERROR    | scrapy.core.scraper:handle_spider_error:164 - Spider error processing <GET https://www.google.com> (referer: None)
+Traceback (most recent call last):
+
+  File "D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders/scrapy_sel_template.py", line 104, in <module>
+    start_scrape()
+    -> <function start_scrape at 0x000002525E399048>
+
+  File "D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders/scrapy_sel_template.py", line 100, in start_scrape
+    process.start()
+    |       -> <function CrawlerProcess.start at 0x000002525FD693A8>
+    -> <scrapy.crawler.CrawlerProcess object at 0x0000025260A44B88>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\scrapy\crawler.py", line 312, in start
+    reactor.run(installSignalHandlers=False)  # blocking call
+    |       -> <function _SignalReactorMixin.run at 0x000002525F372798>
+    -> <twisted.internet.selectreactor.SelectReactor object at 0x0000025268B77D48>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\base.py", line 1283, in run
+    self.mainLoop()
+    |    -> <function _SignalReactorMixin.mainLoop at 0x000002525F372828>
+    -> <twisted.internet.selectreactor.SelectReactor object at 0x0000025268B77D48>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\base.py", line 1292, in mainLoop
+    self.runUntilCurrent()
+    |    -> <function ReactorBase.runUntilCurrent at 0x000002525F371678>
+    -> <twisted.internet.selectreactor.SelectReactor object at 0x0000025268B77D48>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\base.py", line 913, in runUntilCurrent
+    call.func(*call.args, **call.kw)
+    |    |     |    |       |    -> {}
+    |    |     |    |       -> <DelayedCall 0x2525f9dbc48 [-0.07896995544433594s] called=1 cancelled=0 Deferred.callback(<200 https://www.google.com>)>
+    |    |     |    -> (<200 https://www.google.com>,)
+    |    |     -> <DelayedCall 0x2525f9dbc48 [-0.07799911499023438s] called=1 cancelled=0 Deferred.callback(<200 https://www.google.com>)>
+    |    -> <bound method Deferred.callback of <Deferred at 0x2525f9db588 current result: <twisted.python.failure.Failure builtins.TypeEr...
+    -> <DelayedCall 0x2525f9dbc48 [-0.07799911499023438s] called=1 cancelled=0 Deferred.callback(<200 https://www.google.com>)>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\defer.py", line 460, in callback
+    self._startRunCallbacks(result)
+    |    |                  -> <200 https://www.google.com>
+    |    -> <function Deferred._startRunCallbacks at 0x000002525EBFCD38>
+    -> <Deferred at 0x2525f9db588 current result: <twisted.python.failure.Failure builtins.TypeError: Can only append a Series if ig...
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\defer.py", line 568, in _startRunCallbacks
+    self._runCallbacks()
+    |    -> <function Deferred._runCallbacks at 0x000002525EBFCE58>
+    -> <Deferred at 0x2525f9db588 current result: <twisted.python.failure.Failure builtins.TypeError: Can only append a Series if ig...
+
+> File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+    |       |        |        |       |        |       -> {}
+    |       |        |        |       |        -> (<GET https://www.google.com>, <200 https://www.google.com>, <TemplateSelSpider 'TemplateSelSpider' at 0x25268cab7c8>)
+    |       |        |        |       -> <twisted.python.failure.Failure builtins.TypeError: Can only append a Series if ignore_index=True or if the Series has a name>
+    |       |        |        -> <Deferred at 0x2525f9db588 current result: <twisted.python.failure.Failure builtins.TypeError: Can only append a Series if ig...
+    |       |        -> <bound method Scraper.handle_spider_error of <scrapy.core.scraper.Scraper object at 0x0000025268ECEBC8>>
+    |       -> <twisted.python.failure.Failure builtins.TypeError: Can only append a Series if ignore_index=True or if the Series has a name>
+    -> <Deferred at 0x2525f9db588 current result: <twisted.python.failure.Failure builtins.TypeError: Can only append a Series if ig...
+
+  File "D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/spiders/scrapy_sel_template.py", line 68, in parse
+    self.store.append({'a': 0, 'b': 2})
+    |    |     -> <function DataFrame.append at 0x00000252678661F8>
+    |    -> Empty DataFrame
+    |       Columns: []
+    |       Index: []
+    -> <TemplateSelSpider 'TemplateSelSpider' at 0x25268cab7c8>
+
+  File "D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\venv\lib\site-packages\pandas\core\frame.py", line 7049, in append
+    "Can only append a Series if ignore_index=True "
+
+TypeError: Can only append a Series if ignore_index=True or if the Series has a name
+2020-03-30 13:48:06.478 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-30 13:48:06.478 | WARNING  | __main__:closed:77 - TemplateSelSpider spider closed:finished
+2020-03-30 13:48:06.479 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'bans/error/scrapy.core.downloader.handlers.http11.TunnelError': 1,
+ 'downloader/exception_count': 1,
+ 'downloader/exception_type_count/scrapy.core.downloader.handlers.http11.TunnelError': 1,
+ 'downloader/request_bytes': 516,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 60688,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 32.056082,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 30, 17, 48, 6, 478806),
+ 'log_count/DEBUG': 4,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 12,
+ 'proxies/dead': 1,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 64.9682787075902,
+ 'proxies/reanimated': 0,
+ 'proxies/unchecked': 285,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2020, 3, 30, 17, 47, 34, 422724)}
+2020-03-30 13:48:06.479 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-30 14:00:54.881 | INFO     | src.scraping.proxies.proxies:update_proxies:84 - requesting proxies...
+2020-03-30 14:00:54.882 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:43 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-30 14:00:54.885 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-30 14:00:55.146 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-30 14:00:55.151 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:47 - parsing response for proxies
+2020-03-30 14:00:55.168 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-30 14:00:55.847 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 1034
+2020-03-30 14:00:55.849 | INFO     | src.scraping.proxies.proxies:update_proxies:93 - writing proxies to file
+2020-03-30 14:00:55.850 | WARNING  | __main__:start_scrape:91 - Could not load D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 14:00:55.887 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 14:00:55.887 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 14:00:55.888 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 14:00:55.898 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 14:00:56.028 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: baef78f7597e474d
+2020-03-30 14:00:56.084 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 14:00:56.085 | INFO     | __main__:__init__:53 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 14:00:56.085238
+2020-03-30 14:00:56.573 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 14:00:56.579 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 14:00:56.580 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 14:00:56.581 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 14:00:56.611 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:00:56.613 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 14:00:56.613 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 332, reanimated: 0, mean backoff time: 0s)
+2020-03-30 14:00:58.336 | DEBUG    | rotating_proxies.expire:mark_good:95 - Proxy <http://45.33.98.252:8080> is GOOD
+2020-03-30 14:00:58.337 | DEBUG    | scrapy.downloadermiddlewares.redirect:_redirect:44 - Redirecting (302) to <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> from <GET https://www.google.com>
+2020-03-30 14:01:19.341 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.61:80> is DEAD
+2020-03-30 14:01:19.342 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 14:01:26.613 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 1, dead: 1, unchecked: 330, reanimated: 0, mean backoff time: 287s)
+2020-03-30 14:01:47.263 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.235:80> is DEAD
+2020-03-30 14:01:47.264 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 14:01:56.611 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:01:56.613 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 1, dead: 2, unchecked: 329, reanimated: 0, mean backoff time: 173s)
+2020-03-30 14:02:03.423 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://162.252.144.229:8181> is DEAD
+2020-03-30 14:02:03.423 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 14:02:03.499 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://192.241.245.207:3128> is DEAD
+2020-03-30 14:02:03.500 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 4 times, max retries: 150)
+2020-03-30 14:02:03.732 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.234:80> is DEAD
+2020-03-30 14:02:03.733 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 5 times, max retries: 150)
+2020-03-30 14:02:04.300 | DEBUG    | rotating_proxies.expire:mark_dead:74 - GOOD proxy became DEAD: <http://45.33.98.252:8080>
+2020-03-30 14:02:04.301 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 6 times, max retries: 150)
+2020-03-30 14:02:04.488 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.114:80> is DEAD
+2020-03-30 14:02:04.488 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 7 times, max retries: 150)
+2020-03-30 14:02:26.614 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 7, unchecked: 325, reanimated: 0, mean backoff time: 162s)
+2020-03-30 14:02:32.274 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.197:80> is DEAD
+2020-03-30 14:02:32.274 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 8 times, max retries: 150)
+2020-03-30 14:02:34.743 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://192.200.200.98:3128> is DEAD
+2020-03-30 14:02:34.744 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 9 times, max retries: 150)
+2020-03-30 14:02:36.655 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://23.239.9.151:8080> is DEAD
+2020-03-30 14:02:36.655 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 10 times, max retries: 150)
+2020-03-30 14:02:37.404 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://159.89.128.93:8080> is DEAD
+2020-03-30 14:02:37.404 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 11 times, max retries: 150)
+2020-03-30 14:02:37.606 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.210:80> is DEAD
+2020-03-30 14:02:37.606 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 12 times, max retries: 150)
+2020-03-30 14:02:37.801 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.221:80> is DEAD
+2020-03-30 14:02:37.801 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 13 times, max retries: 150)
+2020-03-30 14:02:37.988 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://198.199.119.119:3128> is DEAD
+2020-03-30 14:02:37.988 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 14 times, max retries: 150)
+2020-03-30 14:02:38.020 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://165.227.206.111:8080> is DEAD
+2020-03-30 14:02:38.020 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 15 times, max retries: 150)
+2020-03-30 14:02:38.053 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://67.205.174.209:3128> is DEAD
+2020-03-30 14:02:38.053 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 16 times, max retries: 150)
+2020-03-30 14:02:38.083 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://67.205.146.29:3128> is DEAD
+2020-03-30 14:02:38.083 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 17 times, max retries: 150)
+2020-03-30 14:02:38.277 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.95:80> is DEAD
+2020-03-30 14:02:38.277 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 18 times, max retries: 150)
+2020-03-30 14:02:45.706 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://157.230.35.150:8080> is DEAD
+2020-03-30 14:02:45.706 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 19 times, max retries: 150)
+2020-03-30 14:02:45.895 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.238:80> is DEAD
+2020-03-30 14:02:45.895 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 20 times, max retries: 150)
+2020-03-30 14:02:45.924 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://174.138.54.49:8080> is DEAD
+2020-03-30 14:02:45.924 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 21 times, max retries: 150)
+2020-03-30 14:02:45.957 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://142.93.121.59:8080> is DEAD
+2020-03-30 14:02:45.958 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 22 times, max retries: 150)
+2020-03-30 14:02:46.614 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:02:51.614 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:02:53.979 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://104.168.211.27:1080> is DEAD
+2020-03-30 14:02:53.980 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 23 times, max retries: 150)
+2020-03-30 14:02:56.612 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:02:56.614 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:02:56.614 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 20, unchecked: 309, reanimated: 3, mean backoff time: 170s)
+2020-03-30 14:03:01.614 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:03:06.229 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://134.209.198.237:8118> is DEAD
+2020-03-30 14:03:06.229 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com/sorry/index?continue=https://www.google.com/&q=EhAmADwCAAAAAPA8kv_-6cuJGNjniPQFIhkA8aeDS0g7TJbeQbftXEJDacD8Q_ll3vJLMgFy> with another proxy (failed 24 times, max retries: 150)
+2020-03-30 14:03:06.614 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:08:52.775 | WARNING  | src.scraping.proxies.proxies:update_proxies:161 - update_proxies no pickl found at D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\scraping\proxies\prev_harvest_dt.pkl: [Errno 2] No such file or directory: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\scraping\\proxies\\prev_harvest_dt.pkl'
+2020-03-30 14:08:52.776 | INFO     | src.scraping.proxies.proxies:update_proxies:165 - Updating proxies! (No time record: False or now-pdt>15m: True)
+2020-03-30 14:08:52.776 | INFO     | src.scraping.proxies.proxies:update_proxies:175 - requesting proxies...
+2020-03-30 14:08:52.776 | INFO     | src.scraping.proxies.proxies:update_proxies:177 - harvesting proxies from harvest_us_proxy
+2020-03-30 14:08:52.776 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:105 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-30 14:08:52.779 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-30 14:08:53.039 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-30 14:08:53.042 | INFO     | src.scraping.proxies.proxies:harvest_us_proxy:109 - parsing response for proxies
+2020-03-30 14:08:53.057 | INFO     | src.scraping.proxies.proxies:update_proxies:181 - harvest_us_proxy returned 208 proxies, 208 total
+2020-03-30 14:08:53.058 | INFO     | src.scraping.proxies.proxies:update_proxies:177 - harvesting proxies from harvest_proxyscrape_api
+2020-03-30 14:08:53.059 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-30 14:08:53.735 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 632
+2020-03-30 14:08:53.737 | INFO     | src.scraping.proxies.proxies:update_proxies:181 - harvest_proxyscrape_api returned 109 proxies, 287 total
+2020-03-30 14:08:53.737 | INFO     | src.scraping.proxies.proxies:update_proxies:177 - harvesting proxies from harvest_proxy_list
+2020-03-30 14:08:53.739 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.proxy-list.download:443
+2020-03-30 14:08:54.019 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.proxy-list.download:443 "GET /api/v1/get?type=https&&country=US HTTP/1.1" 200 None
+2020-03-30 14:08:54.022 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.proxy-list.download:443
+2020-03-30 14:08:54.277 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.proxy-list.download:443 "GET /api/v1/get?type=http&&country=US HTTP/1.1" 200 None
+2020-03-30 14:08:54.280 | INFO     | src.scraping.proxies.proxies:update_proxies:181 - harvest_proxy_list returned 70 proxies, 297 total
+2020-03-30 14:08:54.280 | INFO     | src.scraping.proxies.proxies:update_proxies:177 - harvesting proxies from spys
+2020-03-30 14:08:54.280 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/url {"url": "http://spys.one/free-proxy-list/US/"}
+2020-03-30 14:08:58.670 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/url HTTP/1.1" 200 14
+2020-03-30 14:08:58.671 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:08:58.671 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts {"implicit": 2000}
+2020-03-30 14:08:58.673 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts HTTP/1.1" 200 14
+2020-03-30 14:08:58.673 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:08:58.674 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[1]/option[6]"}
+2020-03-30 14:08:58.773 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element HTTP/1.1" 200 88
+2020-03-30 14:08:58.773 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:08:58.774 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/db52f1c0-0421-4777-9e78-91af078b554d/click {"id": "db52f1c0-0421-4777-9e78-91af078b554d"}
+2020-03-30 14:09:00.762 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/db52f1c0-0421-4777-9e78-91af078b554d/click HTTP/1.1" 200 14
+2020-03-30 14:09:00.763 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:01.763 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[1]/option[6]"}
+2020-03-30 14:09:01.791 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element HTTP/1.1" 200 88
+2020-03-30 14:09:01.792 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:01.792 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/791a26cf-b00a-446d-ab46-7705dda640a0/click {"id": "791a26cf-b00a-446d-ab46-7705dda640a0"}
+2020-03-30 14:09:01.823 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/791a26cf-b00a-446d-ab46-7705dda640a0/click HTTP/1.1" 200 14
+2020-03-30 14:09:01.823 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:02.824 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[1]/option[6]"}
+2020-03-30 14:09:02.835 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element HTTP/1.1" 200 88
+2020-03-30 14:09:02.835 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:02.836 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/791a26cf-b00a-446d-ab46-7705dda640a0/click {"id": "791a26cf-b00a-446d-ab46-7705dda640a0"}
+2020-03-30 14:09:02.854 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/791a26cf-b00a-446d-ab46-7705dda640a0/click HTTP/1.1" 200 14
+2020-03-30 14:09:02.855 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:03.855 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts {"implicit": 2000}
+2020-03-30 14:09:03.857 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts HTTP/1.1" 200 14
+2020-03-30 14:09:03.858 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:03.859 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[5]/option[2]"}
+2020-03-30 14:09:03.891 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element HTTP/1.1" 200 88
+2020-03-30 14:09:03.892 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:03.893 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/f1d839c0-9aba-4210-b507-8f6a172b3932/click {"id": "f1d839c0-9aba-4210-b507-8f6a172b3932"}
+2020-03-30 14:09:06.183 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/f1d839c0-9aba-4210-b507-8f6a172b3932/click HTTP/1.1" 200 14
+2020-03-30 14:09:06.184 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:08.185 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts {"implicit": 2000}
+2020-03-30 14:09:08.187 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts HTTP/1.1" 200 14
+2020-03-30 14:09:08.188 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:08.189 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[5]/option[2]"}
+2020-03-30 14:09:08.218 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element HTTP/1.1" 200 88
+2020-03-30 14:09:08.218 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:08.219 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/192d1c20-00f3-46f7-8d1d-71dcf11c47f0/click {"id": "192d1c20-00f3-46f7-8d1d-71dcf11c47f0"}
+2020-03-30 14:09:08.256 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/192d1c20-00f3-46f7-8d1d-71dcf11c47f0/click HTTP/1.1" 200 14
+2020-03-30 14:09:08.257 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:10.258 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts {"implicit": 2000}
+2020-03-30 14:09:10.259 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts HTTP/1.1" 200 14
+2020-03-30 14:09:10.259 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:10.260 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[5]/option[2]"}
+2020-03-30 14:09:10.274 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element HTTP/1.1" 200 88
+2020-03-30 14:09:10.275 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:10.275 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/192d1c20-00f3-46f7-8d1d-71dcf11c47f0/click {"id": "192d1c20-00f3-46f7-8d1d-71dcf11c47f0"}
+2020-03-30 14:09:10.291 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/element/192d1c20-00f3-46f7-8d1d-71dcf11c47f0/click HTTP/1.1" 200 14
+2020-03-30 14:09:10.291 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:12.292 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts {"implicit": 3000}
+2020-03-30 14:09:12.293 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "POST /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/timeouts HTTP/1.1" 200 14
+2020-03-30 14:09:12.293 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:12.294 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - GET http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/source {}
+2020-03-30 14:09:12.360 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "GET /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/source HTTP/1.1" 200 867681
+2020-03-30 14:09:12.372 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:13.012 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - DELETE http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6/window {}
+2020-03-30 14:09:13.097 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "DELETE /session/e4f06f8f21c3f6c5ca5b3c79603e24a6/window HTTP/1.1" 200 12
+2020-03-30 14:09:13.098 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:13.098 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - DELETE http://127.0.0.1:57393/session/e4f06f8f21c3f6c5ca5b3c79603e24a6 {}
+2020-03-30 14:09:13.123 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57393 "DELETE /session/e4f06f8f21c3f6c5ca5b3c79603e24a6 HTTP/1.1" 200 14
+2020-03-30 14:09:13.124 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:09:15.128 | INFO     | src.scraping.proxies.proxies:update_proxies:181 - spys returned 500 proxies, 771 total
+2020-03-30 14:09:15.128 | INFO     | src.scraping.proxies.proxies:update_proxies:191 - writing proxies to file
+2020-03-30 14:09:15.129 | INFO     | src.scraping.proxies.proxies:update_proxies:197 - logging current proxy harvest time: 2020-03-30 14:08:52.776047 to D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\scraping\proxies\prev_harvest_dt.pkl
+2020-03-30 14:09:15.131 | WARNING  | __main__:start_scrape:93 - Could not load D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 14:09:15.175 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 14:09:15.175 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 14:09:15.176 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 14:09:15.194 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 14:09:15.301 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: 90ea6b7c14f004ab
+2020-03-30 14:09:15.372 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 14:09:15.373 | INFO     | __main__:__init__:53 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 14:09:15.373053
+2020-03-30 14:09:15.874 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 14:09:15.881 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 14:09:15.882 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 14:09:15.882 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 14:09:15.906 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:09:15.907 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 14:09:15.908 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 770, reanimated: 0, mean backoff time: 0s)
+2020-03-30 14:09:16.026 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://191.96.42.80:3128> is DEAD
+2020-03-30 14:09:16.027 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 14:09:37.031 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://142.93.11.157:8080> is DEAD
+2020-03-30 14:09:37.032 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 14:09:37.058 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://162.243.108.129:3128> is DEAD
+2020-03-30 14:09:37.058 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 14:09:39.140 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://64.225.2.75:3128> is DEAD
+2020-03-30 14:09:39.140 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 4 times, max retries: 150)
+2020-03-30 14:09:40.107 | DEBUG    | rotating_proxies.expire:mark_good:95 - Proxy <http://34.87.144.111:8080> is GOOD
+2020-03-30 14:09:40.108 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-30 14:09:40.208 | INFO     | __main__:parse:67 - parsed url https://www.google.com
+2020-03-30 14:09:40.213 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-30 14:09:40.213 | WARNING  | __main__:closed:80 - TemplateSelSpider spider closed:finished
+2020-03-30 14:09:40.214 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'bans/error/scrapy.core.downloader.handlers.http11.TunnelError': 2,
+ 'bans/error/twisted.internet.error.ConnectionRefusedError': 1,
+ 'bans/error/twisted.internet.error.TCPTimedOutError': 1,
+ 'downloader/exception_count': 4,
+ 'downloader/exception_type_count/scrapy.core.downloader.handlers.http11.TunnelError': 2,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 1,
+ 'downloader/request_bytes': 1070,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 6234,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 24.306996,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 30, 18, 9, 40, 213021),
+ 'log_count/DEBUG': 10,
+ 'log_count/INFO': 11,
+ 'proxies/dead': 4,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 205.08585012476402,
+ 'proxies/reanimated': 0,
+ 'proxies/unchecked': 766,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2020, 3, 30, 18, 9, 15, 906025)}
+2020-03-30 14:09:40.214 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-30 14:10:12.475 | WARNING  | __main__:start_scrape:94 - Could not load D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 14:10:12.483 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 14:10:12.484 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 14:10:12.484 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 14:10:12.488 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 14:10:12.505 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: e5eaf54b0deeb604
+2020-03-30 14:10:12.524 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 14:10:12.525 | INFO     | __main__:__init__:53 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: TemplateSelSpider-2020-03-30 14:10:12.525047
+2020-03-30 14:10:12.882 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 14:10:12.887 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 14:10:12.888 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 14:10:12.888 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 14:10:12.891 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:10:12.892 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 14:10:12.893 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 770, reanimated: 0, mean backoff time: 0s)
+2020-03-30 14:10:33.907 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://173.242.102.241:60825> is DEAD
+2020-03-30 14:10:33.907 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 14:10:42.893 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 769, reanimated: 0, mean backoff time: 89s)
+2020-03-30 14:11:12.891 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:11:12.893 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 769, reanimated: 0, mean backoff time: 89s)
+2020-03-30 14:11:31.448 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://192.169.156.163:80> is DEAD
+2020-03-30 14:11:31.448 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 14:11:33.524 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://167.172.229.86:8080> is DEAD
+2020-03-30 14:11:33.524 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 14:11:42.894 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 3, unchecked: 767, reanimated: 0, mean backoff time: 137s)
+2020-03-30 14:11:54.530 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://142.93.67.204:3128> is DEAD
+2020-03-30 14:11:54.530 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 4 times, max retries: 150)
+2020-03-30 14:11:54.710 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.149:80> is DEAD
+2020-03-30 14:11:54.711 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 5 times, max retries: 150)
+2020-03-30 14:12:07.893 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:12:12.891 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:12:12.894 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 4, unchecked: 765, reanimated: 1, mean backoff time: 211s)
+2020-03-30 14:12:15.719 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://167.172.248.53:80> is DEAD
+2020-03-30 14:12:15.720 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 6 times, max retries: 150)
+2020-03-30 14:12:36.730 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://50.206.25.110:80> is DEAD
+2020-03-30 14:12:36.731 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 7 times, max retries: 150)
+2020-03-30 14:12:36.904 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.65.33:80> is DEAD
+2020-03-30 14:12:36.905 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 8 times, max retries: 150)
+2020-03-30 14:12:39.832 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://165.227.84.169:8080> is DEAD
+2020-03-30 14:12:39.832 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 9 times, max retries: 150)
+2020-03-30 14:12:42.894 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 8, unchecked: 761, reanimated: 1, mean backoff time: 156s)
+2020-03-30 14:12:52.893 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:13:00.838 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://3.95.221.29:3128> is DEAD
+2020-03-30 14:13:00.838 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 10 times, max retries: 150)
+2020-03-30 14:13:01.011 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.86:80> is DEAD
+2020-03-30 14:13:01.011 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 11 times, max retries: 150)
+2020-03-30 14:13:01.180 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.238:80> is DEAD
+2020-03-30 14:13:01.180 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 12 times, max retries: 150)
+2020-03-30 14:13:12.891 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:13:12.893 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 10, unchecked: 758, reanimated: 2, mean backoff time: 150s)
+2020-03-30 14:13:17.578 | DEBUG    | rotating_proxies.expire:mark_good:95 - Proxy <http://68.183.188.120:8080> is GOOD
+2020-03-30 14:13:17.579 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-30 14:13:17.680 | INFO     | __main__:parse:67 - parsed url https://www.google.com
+2020-03-30 14:13:17.687 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-30 14:13:17.687 | WARNING  | __main__:closed:81 - TemplateSelSpider spider closed:finished
+2020-03-30 14:13:17.688 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'bans/error/scrapy.core.downloader.handlers.http11.TunnelError': 5,
+ 'bans/error/twisted.internet.error.ConnectionRefusedError': 2,
+ 'bans/error/twisted.internet.error.TCPTimedOutError': 5,
+ 'downloader/exception_count': 12,
+ 'downloader/exception_type_count/scrapy.core.downloader.handlers.http11.TunnelError': 5,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 2,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 5,
+ 'downloader/request_bytes': 2782,
+ 'downloader/request_count': 13,
+ 'downloader/request_method_count/GET': 13,
+ 'downloader/response_bytes': 6350,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 184.796032,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 30, 18, 13, 17, 687055),
+ 'log_count/DEBUG': 28,
+ 'log_count/INFO': 20,
+ 'proxies/dead': 10,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 150.29259454480703,
+ 'proxies/reanimated': 2,
+ 'proxies/unchecked': 758,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 13,
+ 'scheduler/dequeued/memory': 13,
+ 'scheduler/enqueued': 13,
+ 'scheduler/enqueued/memory': 13,
+ 'start_time': datetime.datetime(2020, 3, 30, 18, 10, 12, 891023)}
+2020-03-30 14:13:17.688 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-30 14:17:37.755 | WARNING  | __main__:start_scrape:96 - Could not load D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 14:17:37.764 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 14:17:37.765 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 14:17:37.765 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 14:17:37.769 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 14:17:37.785 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: ddafe9bd5415718e
+2020-03-30 14:17:37.803 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 14:17:37.805 | INFO     | __main__:__init__:55 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: template.csv
+2020-03-30 14:17:38.150 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 14:17:38.154 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 14:17:38.155 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 14:17:38.155 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 14:17:38.158 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:17:38.159 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 14:17:38.160 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 770, reanimated: 0, mean backoff time: 0s)
+2020-03-30 14:17:59.172 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.224:80> is DEAD
+2020-03-30 14:17:59.173 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 14:18:01.248 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://199.167.184.124:80> is DEAD
+2020-03-30 14:18:01.249 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 14:18:08.161 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 2, unchecked: 768, reanimated: 0, mean backoff time: 143s)
+2020-03-30 14:18:22.255 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.97:80> is DEAD
+2020-03-30 14:18:22.255 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 14:18:27.081 | DEBUG    | rotating_proxies.expire:mark_good:95 - Proxy <http://68.188.63.149:8080> is GOOD
+2020-03-30 14:18:27.082 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-30 14:18:27.182 | INFO     | __main__:parse:69 - parsed url https://www.google.com
+2020-03-30 14:18:27.186 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-30 14:18:27.186 | WARNING  | __main__:closed:83 - TemplateSelSpider spider closed:finished
+2020-03-30 14:18:27.187 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'bans/error/twisted.internet.error.ConnectionRefusedError': 1,
+ 'bans/error/twisted.internet.error.TCPTimedOutError': 2,
+ 'downloader/exception_count': 3,
+ 'downloader/exception_type_count/twisted.internet.error.ConnectionRefusedError': 1,
+ 'downloader/exception_type_count/twisted.internet.error.TCPTimedOutError': 2,
+ 'downloader/request_bytes': 856,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 6442,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 49.028023,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 30, 18, 18, 27, 186051),
+ 'log_count/DEBUG': 8,
+ 'log_count/INFO': 12,
+ 'proxies/dead': 3,
+ 'proxies/good': 1,
+ 'proxies/mean_backoff': 115.61724599014457,
+ 'proxies/reanimated': 0,
+ 'proxies/unchecked': 767,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 4,
+ 'scheduler/dequeued/memory': 4,
+ 'scheduler/enqueued': 4,
+ 'scheduler/enqueued/memory': 4,
+ 'start_time': datetime.datetime(2020, 3, 30, 18, 17, 38, 158028)}
+2020-03-30 14:18:27.187 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-30 14:22:31.604 | WARNING  | __main__:start_scrape:97 - Could not load store, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 14:22:31.706 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 14:22:31.707 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 14:22:31.707 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 14:22:31.718 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 14:22:31.848 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: 0210b2c9b7a81a36
+2020-03-30 14:22:31.909 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 14:22:31.911 | INFO     | __main__:__init__:56 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv
+2020-03-30 14:22:32.428 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'rotating_proxies.middlewares.RotatingProxyMiddleware',
+ 'rotating_proxies.middlewares.BanDetectionMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 14:22:32.454 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 14:22:32.456 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 14:22:32.456 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 14:22:32.480 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:22:32.481 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 14:22:32.481 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 0, unchecked: 770, reanimated: 0, mean backoff time: 0s)
+2020-03-30 14:22:53.517 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://167.172.248.53:3128> is DEAD
+2020-03-30 14:22:53.518 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 1 times, max retries: 150)
+2020-03-30 14:23:02.481 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 769, reanimated: 0, mean backoff time: 70s)
+2020-03-30 14:23:14.524 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.58.128:80> is DEAD
+2020-03-30 14:23:14.524 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 2 times, max retries: 150)
+2020-03-30 14:23:32.481 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:23:32.482 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 2, unchecked: 768, reanimated: 0, mean backoff time: 169s)
+2020-03-30 14:24:02.482 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 2, unchecked: 768, reanimated: 0, mean backoff time: 169s)
+2020-03-30 14:24:07.482 | DEBUG    | rotating_proxies.middlewares:reanimate_proxies:114 - 1 proxies moved from 'dead' to 'reanimated'
+2020-03-30 14:24:32.481 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:24:32.482 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 1, unchecked: 768, reanimated: 1, mean backoff time: 268s)
+2020-03-30 14:24:54.525 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://184.183.3.211:8080> is DEAD
+2020-03-30 14:24:54.526 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 3 times, max retries: 150)
+2020-03-30 14:24:56.637 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://167.172.140.179:3128> is DEAD
+2020-03-30 14:24:56.638 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 4 times, max retries: 150)
+2020-03-30 14:24:56.675 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://157.245.136.101:8080> is DEAD
+2020-03-30 14:24:56.676 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 5 times, max retries: 150)
+2020-03-30 14:25:02.482 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 4, unchecked: 765, reanimated: 1, mean backoff time: 209s)
+2020-03-30 14:25:17.683 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://196.52.65.24:80> is DEAD
+2020-03-30 14:25:17.683 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 6 times, max retries: 150)
+2020-03-30 14:25:32.481 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:25:32.482 | INFO     | rotating_proxies.middlewares:log_stats:196 - Proxies(good: 0, dead: 5, unchecked: 764, reanimated: 1, mean backoff time: 183s)
+2020-03-30 14:25:38.690 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://34.95.161.192:80> is DEAD
+2020-03-30 14:25:38.691 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 7 times, max retries: 150)
+2020-03-30 14:25:40.825 | DEBUG    | rotating_proxies.expire:mark_dead:76 - Proxy <http://185.33.86.111:3128> is DEAD
+2020-03-30 14:25:40.825 | DEBUG    | rotating_proxies.middlewares:_retry:184 - Retrying <GET https://www.google.com> with another proxy (failed 8 times, max retries: 150)
+2020-03-30 14:26:07.340 | WARNING  | __main__:start_scrape:97 - Could not load store, [Errno 2] File D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv does not exist: 'D:\\Users\\Jacob\\Documents\\Upwork\\ScrapingTemplate\\src\\../results/Template.csv'
+2020-03-30 14:26:07.349 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 14:26:07.349 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 14:26:07.349 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 14:26:07.353 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 14:26:07.369 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: a2b754d285e47f29
+2020-03-30 14:26:07.388 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 14:26:07.389 | INFO     | __main__:__init__:56 - TemplateSelSpider init, store: Empty DataFrame
+Columns: []
+Index: [], file_path: D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv
+2020-03-30 14:26:07.730 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 14:26:07.735 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 14:26:07.736 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 14:26:07.737 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 14:26:07.740 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:26:07.741 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 14:26:07.911 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-30 14:26:08.011 | INFO     | __main__:parse:70 - parsed url https://www.google.com
+2020-03-30 14:26:08.071 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-30 14:26:08.072 | WARNING  | __main__:closed:84 - TemplateSelSpider spider closed:finished
+2020-03-30 14:26:08.072 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'downloader/request_bytes': 214,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 6427,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.331974,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 30, 18, 26, 8, 72043),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 3, 30, 18, 26, 7, 740069)}
+2020-03-30 14:26:08.072 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)
+2020-03-30 14:27:15.953 | INFO     | scrapy.utils.log:log_scrapy_info:146 - Scrapy 2.0.0 started (bot: scrapybot)
+2020-03-30 14:27:15.953 | INFO     | scrapy.utils.log:log_scrapy_info:149 - Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.7.6 (tags/v3.7.6:43364a7ae0, Dec 19 2019, 00:42:30) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-03-30 14:27:15.954 | DEBUG    | scrapy.utils.log:log_scrapy_info:152 - Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-03-30 14:27:15.957 | INFO     | scrapy.crawler:__init__:52 - Overridden settings:
+{'CONCURRENT_REQUESTS': 15,
+ 'DOWNLOAD_DELAY': 5,
+ 'DOWNLOAD_TIMEOUT': 100,
+ 'LOG_ENABLED': False}
+2020-03-30 14:27:15.973 | INFO     | scrapy.extensions.telnet:__init__:60 - Telnet Password: 45c99178313343f8
+2020-03-30 14:27:15.990 | INFO     | scrapy.middleware:from_settings:48 - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-03-30 14:27:16.011 | INFO     | __main__:__init__:56 - TemplateSelSpider init, store:      a    b
+0  0.0  2.0, file_path: D:\Users\Jacob\Documents\Upwork\ScrapingTemplate\src\../results/Template.csv
+2020-03-30 14:27:16.346 | INFO     | scrapy.middleware:from_settings:48 - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-30 14:27:16.350 | INFO     | scrapy.middleware:from_settings:48 - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-30 14:27:16.351 | INFO     | scrapy.middleware:from_settings:48 - Enabled item pipelines:
+[]
+2020-03-30 14:27:16.352 | INFO     | scrapy.core.engine:open_spider:258 - Spider opened
+2020-03-30 14:27:16.355 | INFO     | scrapy.extensions.logstats:log:48 - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-30 14:27:16.356 | INFO     | scrapy.extensions.telnet:start_listening:74 - Telnet console listening on 127.0.0.1:6023
+2020-03-30 14:27:16.489 | DEBUG    | scrapy.core.engine:_on_success:240 - Crawled (200) <GET https://www.google.com> (referer: None)
+2020-03-30 14:27:16.591 | INFO     | __main__:parse:70 - parsed url https://www.google.com
+2020-03-30 14:27:16.612 | INFO     | scrapy.core.engine:close_spider:297 - Closing spider (finished)
+2020-03-30 14:27:16.612 | WARNING  | __main__:closed:84 - TemplateSelSpider spider closed:finished
+2020-03-30 14:27:16.613 | INFO     | scrapy.statscollectors:close_spider:47 - Dumping Scrapy stats:
+{'downloader/request_bytes': 214,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 6468,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.256978,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 30, 18, 27, 16, 612888),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 3, 30, 18, 27, 16, 355910)}
+2020-03-30 14:27:16.613 | INFO     | scrapy.core.engine:<lambda>:328 - Spider closed (finished)

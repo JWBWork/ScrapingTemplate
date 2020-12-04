@@ -1,4 +1,57 @@
 {
-  "use_proxy": false,
-  "proxy_path": "src/scraping/proxies/proxies.txt"
+    "steps": [
+        {
+            "url": "address_url",
+            "type": "selenium_scrape",
+            "instructions": {
+                "actions": [{
+                    "action": "scrape",
+                    "scrape": [{
+                        "type": "xpath",
+                        "content": {
+                          "href": "listing_url"
+                        },
+                        "path": "path_to_listing_anchors",
+                        "follow_urls": true
+                    }]
+                },{
+                    "action": "click",
+                    "action_target": "path_to_next_page_button"
+                }],
+                "repeat": {
+                    "type": "xpath",
+                    "xpath": "path_to_next_page_button",
+                    "condition": "Not present"
+                }
+            },
+            "follow": {
+                "urls": [
+                    "listing_url"
+                ]
+            }
+        },
+        {
+            "type": "scrape",
+            "targets": [
+                {
+                    "type": "css",
+                    "path": "path_to_listing_title",
+                    "name": "listing_title"
+                },
+                {
+                    "type": "xpath",
+                    "path": "path_to_listing_price",
+                    "name": "listing_price"
+                }
+            ]
+        }
+    ],
+    "output": {
+        "format": "csv",
+        "file_name": "test.csv",
+        "deliver_by": null
+    },
+    "use_proxy": false,
+    "proxy_path": "src/scraping/proxies/proxies.txt",
+    "use_selenium": true
 }

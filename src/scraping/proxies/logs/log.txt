@@ -1,0 +1,89 @@
+2020-03-30 14:32:42.965 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu", "--log-level=2", "--\u2013disable-notifications", "--disable-dev-shm-usage", "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0", "test-type"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["--headless", "--disable-gpu", "--log-level=2", "--\u2013disable-notifications", "--disable-dev-shm-usage", "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:72.0) Gecko/20100101 Firefox/72.0", "test-type"]}}}
+2020-03-30 14:32:42.966 | DEBUG    | urllib3.connectionpool:_new_conn:225 - Starting new HTTP connection (1): 127.0.0.1:57816
+2020-03-30 14:32:47.476 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session HTTP/1.1" 200 679
+2020-03-30 14:32:47.476 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:47.477 | INFO     | __main__:update_proxies:165 - Updating proxies! (No time record: False or now-pdt>15m: True)
+2020-03-30 14:32:47.477 | INFO     | __main__:update_proxies:175 - requesting proxies...
+2020-03-30 14:32:47.477 | INFO     | __main__:update_proxies:177 - harvesting proxies from harvest_us_proxy
+2020-03-30 14:32:47.477 | INFO     | __main__:harvest_us_proxy:105 - harvest_us_proxy - requesting https://free-proxy-list.net/
+2020-03-30 14:32:47.480 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.us-proxy.org:443
+2020-03-30 14:32:47.827 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.us-proxy.org:443 "GET / HTTP/1.1" 200 None
+2020-03-30 14:32:47.829 | INFO     | __main__:harvest_us_proxy:109 - parsing response for proxies
+2020-03-30 14:32:47.967 | INFO     | __main__:update_proxies:181 - harvest_us_proxy returned 208 proxies, 208 total
+2020-03-30 14:32:47.968 | INFO     | __main__:update_proxies:177 - harvesting proxies from harvest_proxyscrape_api
+2020-03-30 14:32:47.969 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): api.proxyscrape.com:443
+2020-03-30 14:32:48.640 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://api.proxyscrape.com:443 "GET /?request=getproxies&proxytype=http&timeout=10000&country=US&ssl=all&anonymity=all HTTP/1.1" 200 956
+2020-03-30 14:32:48.642 | INFO     | __main__:update_proxies:181 - harvest_proxyscrape_api returned 149 proxies, 330 total
+2020-03-30 14:32:48.642 | INFO     | __main__:update_proxies:177 - harvesting proxies from harvest_proxy_list
+2020-03-30 14:32:48.643 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.proxy-list.download:443
+2020-03-30 14:32:48.756 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.proxy-list.download:443 "GET /api/v1/get?type=https&&country=US HTTP/1.1" 200 None
+2020-03-30 14:32:48.760 | DEBUG    | urllib3.connectionpool:_new_conn:959 - Starting new HTTPS connection (1): www.proxy-list.download:443
+2020-03-30 14:32:48.855 | DEBUG    | urllib3.connectionpool:_make_request:437 - https://www.proxy-list.download:443 "GET /api/v1/get?type=http&&country=US HTTP/1.1" 200 None
+2020-03-30 14:32:48.859 | INFO     | __main__:update_proxies:181 - harvest_proxy_list returned 70 proxies, 335 total
+2020-03-30 14:32:48.859 | INFO     | __main__:update_proxies:177 - harvesting proxies from spys
+2020-03-30 14:32:48.860 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/url {"url": "http://spys.one/free-proxy-list/US/"}
+2020-03-30 14:32:52.319 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/url HTTP/1.1" 200 14
+2020-03-30 14:32:52.320 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:52.320 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/timeouts {"implicit": 2000}
+2020-03-30 14:32:52.323 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/timeouts HTTP/1.1" 200 14
+2020-03-30 14:32:52.323 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:52.324 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[1]/option[6]"}
+2020-03-30 14:32:52.414 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element HTTP/1.1" 200 88
+2020-03-30 14:32:52.415 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:52.415 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element/4344fcc9-f525-406d-a8de-b8b36983626d/click {"id": "4344fcc9-f525-406d-a8de-b8b36983626d"}
+2020-03-30 14:32:54.780 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element/4344fcc9-f525-406d-a8de-b8b36983626d/click HTTP/1.1" 200 14
+2020-03-30 14:32:54.781 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:55.782 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[1]/option[6]"}
+2020-03-30 14:32:55.809 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element HTTP/1.1" 200 88
+2020-03-30 14:32:55.809 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:55.810 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element/0bd3617e-274c-4309-b2be-5544d0b5b3c0/click {"id": "0bd3617e-274c-4309-b2be-5544d0b5b3c0"}
+2020-03-30 14:32:55.841 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element/0bd3617e-274c-4309-b2be-5544d0b5b3c0/click HTTP/1.1" 200 14
+2020-03-30 14:32:55.841 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:56.842 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[1]/option[6]"}
+2020-03-30 14:32:56.856 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element HTTP/1.1" 200 88
+2020-03-30 14:32:56.857 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:56.857 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element/0bd3617e-274c-4309-b2be-5544d0b5b3c0/click {"id": "0bd3617e-274c-4309-b2be-5544d0b5b3c0"}
+2020-03-30 14:32:56.873 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element/0bd3617e-274c-4309-b2be-5544d0b5b3c0/click HTTP/1.1" 200 14
+2020-03-30 14:32:56.874 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:57.874 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/timeouts {"implicit": 2000}
+2020-03-30 14:32:57.875 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/timeouts HTTP/1.1" 200 14
+2020-03-30 14:32:57.876 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:57.876 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[5]/option[2]"}
+2020-03-30 14:32:57.891 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element HTTP/1.1" 200 88
+2020-03-30 14:32:57.891 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:32:57.892 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element/9df18450-f6ed-4e7e-99a3-6490ab8aa3e1/click {"id": "9df18450-f6ed-4e7e-99a3-6490ab8aa3e1"}
+2020-03-30 14:33:00.263 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element/9df18450-f6ed-4e7e-99a3-6490ab8aa3e1/click HTTP/1.1" 200 14
+2020-03-30 14:33:00.264 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:02.264 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/timeouts {"implicit": 2000}
+2020-03-30 14:33:02.265 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/timeouts HTTP/1.1" 200 14
+2020-03-30 14:33:02.265 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:02.265 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[5]/option[2]"}
+2020-03-30 14:33:02.284 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element HTTP/1.1" 200 88
+2020-03-30 14:33:02.285 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:02.285 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element/6e009a94-2d62-4ec2-88d6-2a786eb792ab/click {"id": "6e009a94-2d62-4ec2-88d6-2a786eb792ab"}
+2020-03-30 14:33:02.310 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element/6e009a94-2d62-4ec2-88d6-2a786eb792ab/click HTTP/1.1" 200 14
+2020-03-30 14:33:02.311 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:04.311 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/timeouts {"implicit": 2000}
+2020-03-30 14:33:04.312 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/timeouts HTTP/1.1" 200 14
+2020-03-30 14:33:04.312 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:04.313 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element {"using": "xpath", "value": "/html/body/table[2]/tbody/tr[5]/td/table/tbody/tr[1]/td[2]/font[2]/select[5]/option[2]"}
+2020-03-30 14:33:04.330 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element HTTP/1.1" 200 88
+2020-03-30 14:33:04.331 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:04.331 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/element/6e009a94-2d62-4ec2-88d6-2a786eb792ab/click {"id": "6e009a94-2d62-4ec2-88d6-2a786eb792ab"}
+2020-03-30 14:33:04.347 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/element/6e009a94-2d62-4ec2-88d6-2a786eb792ab/click HTTP/1.1" 200 14
+2020-03-30 14:33:04.347 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:06.348 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - POST http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/timeouts {"implicit": 3000}
+2020-03-30 14:33:06.349 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "POST /session/f8f715b0073f64a9d8956eb926325f1f/timeouts HTTP/1.1" 200 14
+2020-03-30 14:33:06.349 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:06.350 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - GET http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/source {}
+2020-03-30 14:33:06.417 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "GET /session/f8f715b0073f64a9d8956eb926325f1f/source HTTP/1.1" 200 872299
+2020-03-30 14:33:06.431 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:07.139 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - DELETE http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f/window {}
+2020-03-30 14:33:07.229 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "DELETE /session/f8f715b0073f64a9d8956eb926325f1f/window HTTP/1.1" 200 12
+2020-03-30 14:33:07.229 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:07.230 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:388 - DELETE http://127.0.0.1:57816/session/f8f715b0073f64a9d8956eb926325f1f {}
+2020-03-30 14:33:07.257 | DEBUG    | urllib3.connectionpool:_make_request:437 - http://127.0.0.1:57816 "DELETE /session/f8f715b0073f64a9d8956eb926325f1f HTTP/1.1" 200 14
+2020-03-30 14:33:07.257 | DEBUG    | selenium.webdriver.remote.remote_connection:_request:440 - Finished Request
+2020-03-30 14:33:09.261 | INFO     | __main__:update_proxies:181 - spys returned 500 proxies, 805 total
+2020-03-30 14:33:09.261 | INFO     | __main__:update_proxies:191 - writing proxies to file
+2020-03-30 14:33:09.263 | INFO     | __main__:update_proxies:197 - logging current proxy harvest time: 2020-03-30 14:32:47.477400 to D:/Users/Jacob/Documents/Upwork/ScrapingTemplate/src/scraping/proxies\prev_harvest_dt.pkl
